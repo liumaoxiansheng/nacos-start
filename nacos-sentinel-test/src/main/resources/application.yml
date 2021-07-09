@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sentinel-test
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: nacos-test-consumer-dev
+server:
+  port: 9004

@@ -18,7 +18,11 @@ Windows
 shutdown.cmd
 或者双击shutdown.cmd运行文件
 
-2、持久化配置(可不配)：
+2、nacos作为服务与发现：注意版本对应本次spring boot2.1.7 ---》0.9.0.RELEASE
+    https://github.com/alibaba/spring-cloud-alibaba/wiki/Nacos-discovery
+3、nacos作为配置中心
+    https://github.com/alibaba/spring-cloud-alibaba/wiki/Nacos-config
+4、持久化配置(可不配)：
 初始化配置：执行config/nacos-sql.sql
 修改config/application.properties
   spring.datasource.platform=mysql
@@ -30,3 +34,5 @@ shutdown.cmd
   db.password.0=123456
 
   高版本MySQL8+：注意url连接参数：userUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong&allowMultiQueries=true
+
+5、

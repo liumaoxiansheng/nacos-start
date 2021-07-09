@@ -2,13 +2,9 @@ package com.study.testconsumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
-import java.lang.ref.PhantomReference;
 
 /**
  * @className: TestController
@@ -17,7 +13,6 @@ import java.lang.ref.PhantomReference;
  * @date: 2021/7/8
  **/
 @RestController
-@RefreshScope   // 实时刷新
 public class TestController {
 
     @Autowired

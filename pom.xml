@@ -6,6 +6,7 @@
     <modules>
         <module>nacos-test-server</module>
         <module>nacos-test-consumer-server</module>
+        <module>nacos-sentinel-test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -50,6 +51,10 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
             <version>${spring-cloud-alibaba.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!--<dependency>
             <groupId>com.atguigu.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
@@ -65,13 +70,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--<dependency>
+            <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>2.1.4.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>-->
+            </dependency>
         </dependencies>
 
     </dependencyManagement>
