@@ -1,0 +1,11 @@
+server:
+  port: 9003
+spring:
+  profiles:
+    active: pro
+  application:
+    name: test-consumer-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
