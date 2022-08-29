@@ -7,6 +7,12 @@
         <module>nacos-test-server</module>
         <module>nacos-test-consumer-server</module>
         <module>nacos-sentinel-test</module>
+        <module>demo</module>
+        <module>nacos-gateway</module>
+        <module>download-center</module>
+        <module>download-server</module>
+        <module>download-core</module>
+        <module>log-test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -54,6 +60,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.3.2</version>
         </dependency>
         <!--<dependency>
             <groupId>com.atguigu.springcloud</groupId>

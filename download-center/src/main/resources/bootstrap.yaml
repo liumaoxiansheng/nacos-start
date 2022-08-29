@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: download-center
+    profiles:
+        active: dev
+  cloud:
+    nacos:
+      config:
+        enabled: false
+      discovery:
+        server-addr: localhost:8848
+#spring.cloud.nacos.config.server-addr=
+#spring.cloud.nacos.config.file-extension=yaml
+#spring.cloud.nacos.config.group=DEFAULT_GROUP
+#spring.cloud.nacos.config.namespace=public
+#spring.cloud.nacos.config.ext-config[0].data-id=test_consumer_default.yaml
+#spring.cloud.nacos.config.ext-config[0].group=DEFAULT_GROUP
+# spring.cloud.nacos.config.extension-configs[2].refresh=true

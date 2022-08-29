@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 public class TestService {
 
 
+
+    @SentinelResource("/sayHello")
     public String sayHello(String name) {
         return "Hello, " + name;
     }

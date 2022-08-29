@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: sentinel-gateway
+  cloud:
+    sentinel:
+      transport:
+        port: 8729
+        dashboard: localhost:8080
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: nacos-test-consumer-dev
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          enabled: true  # start auto routes ,path is :/service name/**
+          lower-case-service-id: true
+      routes:
+        # 路由信息.
+#        - id: sentinel-test
+#          uri: lb://sentinel-test
+#          predicates:
+#            - Path=/sentinel-test/**
+#        - id: test-consumer-server
+#          uri: lb://test-consumer-server
+#          predicates:
+#            - Path=/test-consumer-server/**
+#          filters:
+#            - RewritePath=/httpbin/(?<segment>.*), /$\{segment}
+server:
+  port: 9005

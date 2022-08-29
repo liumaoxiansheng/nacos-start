@@ -2,4 +2,17 @@ spring:
   cloud:
     nacos:
       config:
-        enabled: false
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        namespace: nacos-test-consumer-dev
+    sentinel:
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: sentinel-test
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow

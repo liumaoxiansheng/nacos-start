@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        enabled: false
+      discovery:
+        enabled: false
+        server-addr: 127.0.0.1:8848
+        namespace: nacos-test-consumer-dev
+  application:
+    name: log-test
+
+server:
+    port: 9004
+logging:
+  level:
+    root: info
